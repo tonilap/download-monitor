@@ -13,7 +13,7 @@ fs.watch(directory, function(event, filename) {
   	timestamp: Date.now()
   }));
 
-  publisher.bind('tcp://*:5432', function(err) {
+  publisher.bind('tcp://*:5910', function(err) {
   	console.log('Listening for subscribers...')
   });
 });
